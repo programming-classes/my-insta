@@ -1,5 +1,7 @@
 import "./App.css";
 import { Box, Image, Badge, Flex, Spacer } from "@chakra-ui/react";
+import {StarIcon,ChatIcon,ExternalLinkIcon,DownloadIcon} from '@chakra-ui/icons'
+
 
 function App() {
   const property = {
@@ -37,19 +39,13 @@ function App() {
 
         <Box p="6">
           <Box display="flex" alignItems="baseline">
-            <Badge borderRadius="full" px="2" colorScheme="teal">
-              New
-            </Badge>
-            <Box
-              color="gray.500"
-              fontWeight="semibold"
-              letterSpacing="wide"
-              fontSize="xs"
-              textTransform="uppercase"
-              ml="2"
-            >
-              {property.beds} beds &bull; {property.baths} baths
-            </Box>
+          <StarIcon p={0.5} w={5} h={5}/>
+          <ChatIcon p={0.5} w={5} h={5}/>
+          <ExternalLinkIcon p={0.5} w={5} h={5}/>
+          <Spacer/>
+          <DownloadIcon p={0.5} w={5} h={5}/>
+
+            
           </Box>
 
           <Box
